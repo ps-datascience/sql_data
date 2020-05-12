@@ -1,5 +1,7 @@
 create table users(idt_user int, name varchar(50), age int, state char(2));
 
+create table transactions(idt_transaction int, idt_user int, value float, tr_date date);
+
 insert into users (idt_user, name, age, state) values (1, 'Larissa Fernandes Carvalho', 56, 'RJ');
 insert into users (idt_user, name, age, state) values (2, 'Leila Gomes Oliveira', 29, 'MG');
 insert into users (idt_user, name, age, state) values (3, 'Sarah Cardoso Lima', 65, 'RJ');
@@ -111,9 +113,6 @@ insert into users (idt_user, name, age, state) values (108, 'Enilda Sanches', 19
 insert into users (idt_user, name, age, state) values (109, 'Filinto Noite', 55, 'SP');
 insert into users (idt_user, name, age, state) values (110, 'Ítalo Lobo', 65, 'ES');
 
-
-
-create table transactions(idt_transaction int, idt_user int, value float, tr_date date);
 
 insert into transactions (idt_transaction, idt_user, value, tr_date) values (1, 50, 325.09, '2017-05-15');
 insert into transactions (idt_transaction, idt_user, value, tr_date) values (2, 2, 136.05, '2019-07-20');
